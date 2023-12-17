@@ -1,0 +1,115 @@
+/* Made By: Charles M Milam Jr | Date: 10-14-23 | Memegenerator.css
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/* submission container*/
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+body{
+    background: lightgray;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    color: darkgray;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+    font-size: 25px;
+}
+/* inputs */
+.toptextin, .bottomtextin{
+    width: 250px;
+    text-align: center;
+}
+
+.submit{
+    display: block;
+    width: 242px;
+    height: 15px;
+    background-color: indigo;
+    color: aliceblue;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: purple;
+    transition: 200ms;
+}
+.hiddensubmit{
+    display: none;
+}
+
+/* content container */
+
+.ouputcontainer{
+background-color: none;
+margin-top: 120px;
+z-index: -1;
+position: absolute;
+}
+
+/* outputs */
+
+.toptext{
+    background-color: none;
+    margin-top: 50px;
+    padding-bottom: 30%;
+    text-shadow: -4px -4px 7px black,
+                 4px 4px 7px black,
+                 -4px 4px 7px black,
+                 4px -4px 7px black ;
+    letter-spacing: 4px;
+    font-size: 15PX;
+}
+
+.bottomtext{
+    background-color: none;
+    padding: 30%;
+    text-shadow: -4px -4px 7px black,
+                 4px 4px 7px black,
+                 -4px 4px 7px black,
+                 4px -4px 7px black ;
+    letter-spacing: 4px;
+    font-size: 15PX;
+}
+
+img{
+    margin-top: 120px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 0px 10px black;
+    z-index: -2;
+}
+
+/* page info*/
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
