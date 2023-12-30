@@ -1,115 +1,188 @@
-/* Made By: Charles M Milam Jr | Date: 10-14-23 | Memegenerator.css
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+body{
+    background-color: rgb(135, 137, 79);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
 
-
-/* submission container*/
-.menu{
-    width: 100%;
-    height: 100px;
+.title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* CONTAINER FOR ALL ITEM TO BE SUBMITTED */
+.inputfield{
+    width: 100dvw;
+    height: auto;
     background-color: black;
     position: fixed;
     top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(70px); 
+    background-color: rgba(208, 208, 208, 0.5);
+    color: rgb(197, 197, 197);
+    border-bottom: .5px solid #828282 ;
 
-body{
-    background: lightgray;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.backdrop{
-    width: 100%;
-    height: 100%;
-    color: darkgray;
-    display: flex;
-    position: absolute;
-    top: 20px;
-    justify-content: center;
-    align-items: center;
-    z-index: -3;
-    font-size: 25px;
-}
-/* inputs */
-.toptextin, .bottomtextin{
-    width: 250px;
+    z-index: 1;
     text-align: center;
+    z-index: 3;
+    text-shadow: 0 0 2px black;
 }
 
-.submit{
-    display: block;
-    width: 242px;
-    height: 15px;
-    background-color: indigo;
-    color: aliceblue;
-    padding: 8px;
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* INPUT FIELD  */
+.topText, .buttonText, .urlImage{
+    background-color: rgb(135, 137, 79);
+    color: rgb(213, 213, 213);
+    width: 200px;
+    height: 25px;
+    margin: 0;
+    border: none;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* SUBMITTION BUTTON */
+.submitBTN{
+    width: 204px;
+    height: 27px;
+    background-color: rgb(107, 107, 78);
     text-align: center;
     cursor: pointer;
+    font-size: large;
+    color: rgb(166, 166, 166);
+    border: none;
 }
-.submit:hover{
-    background-color: purple;
+.submitBTN:hover{
+    background-color: rgb(69, 96, 78);
     transition: 200ms;
 }
 .hiddensubmit{
     display: none;
 }
-
-/* content container */
-
-.ouputcontainer{
-background-color: none;
-margin-top: 120px;
-z-index: -1;
-position: absolute;
-}
-
-/* outputs */
-
-.toptext{
-    background-color: none;
-    margin-top: 50px;
-    padding-bottom: 30%;
-    text-shadow: -4px -4px 7px black,
-                 4px 4px 7px black,
-                 -4px 4px 7px black,
-                 4px -4px 7px black ;
-    letter-spacing: 4px;
-    font-size: 15PX;
-}
-
-.bottomtext{
-    background-color: none;
-    padding: 30%;
-    text-shadow: -4px -4px 7px black,
-                 4px 4px 7px black,
-                 -4px 4px 7px black,
-                 4px -4px 7px black ;
-    letter-spacing: 4px;
-    font-size: 15PX;
-}
-
-img{
-    margin-top: 120px;
-    width: 300px;
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* MAIN CONTAINER */
+.main{
+    margin-top: 140px;
+    margin-bottom: 70px;
+    width: 85%;
     height: auto;
-    box-shadow: 0px 0px 10px black;
-    z-index: -2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* CONTENT CONTAINER */
+.contentcontainer{
+    width: 475px;
+    height: 400px;
+    margin: 5px;
+    position: relative;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* Image Container */
+.imgContainer{
+    background-color: rgb(107, 107, 78);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+/* IMAGE */
+.urlimage{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid ;
+    box-shadow: 0 0 10px black;
+    top: 0;
+    z-index: -3;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* DELETE */
+.remove{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+.remove:hover{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(127, 127, 127, 0.5);
+    color: white;
+    font-size: 10rem;
+    text-shadow: 0 0 5px black;
+    border: 1px solid ;
+    rotate: 180deg;
+    transition: .5s;
 }
 
-/* page info*/
-.footer{
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* TOP AND BOTTOM TEXT CONTENT */
+.topContainer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.bottomContainer{
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+    font-size: 25px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* NAVIGATION MENUE */
+.info{   
     width: 100%;
     height: 50px;
-    background-color: black;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    font-size: large;
+    word-spacing: 5px;
+    z-index: 3;
+}
+.navmenu{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(20px); 
+    background-color: rgba(208, 208, 208, 0.5);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+p, a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    text-shadow: 0 0 2px black;
+    padding: 10px;
+}
