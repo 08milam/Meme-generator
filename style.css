@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(135, 137, 79);
+    background-color: rgb(57, 70, 132);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -34,7 +34,7 @@ body{
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* INPUT FIELD  */
 .topText, .buttonText, .urlImage{
-    background-color: rgb(135, 137, 79);
+    background-color: rgb(57, 70, 132);
     color: rgb(213, 213, 213);
     width: 200px;
     height: 25px;
@@ -47,7 +47,7 @@ body{
 .submitBTN{
     width: 204px;
     height: 27px;
-    background-color: rgb(107, 107, 78);
+    background-color: rgb(31, 57, 187);
     text-align: center;
     cursor: pointer;
     font-size: large;
@@ -86,7 +86,7 @@ body{
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* Image Container */
 .imgContainer{
-    background-color: rgb(107, 107, 78);
+    background-color: rgb(79, 89, 137);
     height: 100%;
     overflow: hidden;
     position: relative;
